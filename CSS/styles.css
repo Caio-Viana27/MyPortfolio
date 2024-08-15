@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+    color: rgb(126, 125, 147);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grid-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: rgb(22, 22, 28);
+    border: 2px solid rgb(22, 22, 28);
+    border-radius: 10px;
+    margin: 5% auto;
+    padding: 2%;
+}
+
+.grid-item {
+    padding: inherit;
+}
+
+.photo {
+    text-align: center;
+}
+
+img {
+    height: 15em;
+    width: 15em;
+    border: 5px solid rgba(82, 76, 76, 0.8);
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
+.proInfo {
+    border-left: 2px solid rgba(82, 76, 76, 0.8);
+    padding: 5%;
+}
+
+.stackInfo {
+    list-style-type: none;
+    text-align: left;
+}
+
+.contactInfo {
+    text-align: center;
+    float: center;
+    /* border: 2px solid green; */
+}
+
+.socialLinks {
+    color: rgb(126, 125, 147);
+    text-decoration: none;
+}
+
+.socialLinks:hover {
+    color: white;
+}
