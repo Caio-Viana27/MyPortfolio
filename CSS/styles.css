@@ -6,7 +6,7 @@
 body {
     background-color: rgb(12, 12, 12);
     color: rgb(126, 125, 147);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial Narrow', 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 .grid-container {
@@ -16,8 +16,12 @@ body {
     background-color: rgb(22, 22, 28);
     border: 2px solid rgb(22, 22, 28);
     border-radius: 10px;
-    margin: 5% auto;
+    margin: 3% auto;
     padding: 2%;
+}
+
+.photo>h2 {
+    font-size: 2vw;
 }
 
 .grid-item {
@@ -29,27 +33,38 @@ body {
 }
 
 img {
-    height: 15em;
-    width: 15em;
+    width: 70%;
+    height: auto;
     border: 5px solid rgba(82, 76, 76, 0.8);
     border-radius: 50%;
     margin-bottom: 2%;
 }
 
-.proInfo {
-    border-left: 2px solid rgba(82, 76, 76, 0.8);
-    padding: 5%;
+/* tecnologies icons ================================= */
+
+div.stackInfo {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: rgb(22, 22, 28);
+    border: 2px solid rgb(22, 22, 28);
+    border-radius: 10px;
+    margin: 3% auto;
+    padding: 2%;
 }
 
-.stackInfo {
-    list-style-type: none;
-    text-align: left;
+div.stackInfo>div {
+    padding: inherit;
+    margin: inherit;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bold;
 }
+
+/* contact =========================================== */
 
 .contactInfo {
     text-align: center;
-    float: center;
-    /* border: 2px solid green; */
 }
 
 .socialLinks {
@@ -59,4 +74,45 @@ img {
 
 .socialLinks:hover {
     color: white;
+}
+
+/* mobile =============================================== */
+
+@media only screen and (max-width: 600px) {
+    div.personalInfo {
+        display: block;
+        text-align: justify;
+    }
+
+    div.photo>h2 {
+        font-size: 3vw;
+    }
+
+    div.professinalInfo>h3 {
+        text-align: center;
+    }
+
+    p.experience {
+        margin: 5%;
+    }
+
+    div.stackInfo {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+
+    div.stackInfo>div {
+        font-size: 3vw;
+    }
+
+    footer {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: rgb(22, 22, 28);
+        border: 2px solid rgb(22, 22, 28);
+        border-radius: 10px;
+        margin: 3% auto;
+        padding: 2%;
+    }
 }
