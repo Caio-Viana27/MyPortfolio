@@ -4,28 +4,21 @@
 }
 
 body {
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(22, 22, 28);
     color: rgb(126, 125, 147);
-    font-family: 'Arial Narrow', 'Franklin Gothic Medium', Arial, sans-serif;
+    font-family: "VT323", monospace;
 }
 
 .grid-container {
     width: 90%;
+    height: 90%;
     display: grid;
     grid-template-columns: 40% 60%;
-    background-color: rgb(22, 22, 28);
-    border: 2px solid rgb(22, 22, 28);
-    border-radius: 10px;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 30px;
     margin: 3% auto;
     padding: 2%;
-}
-
-.photo>h2 {
-    font-size: 2vw;
-}
-
-.grid-item {
-    padding: inherit;
 }
 
 .photo {
@@ -40,15 +33,28 @@ img {
     margin-bottom: 2%;
 }
 
+.grid-item {
+    padding: inherit;
+}
+
+.text {
+    font-size: 1.5vw;
+}
+
+a.generalLinks {
+    font-size: 2.5vw;
+    color: rgb(255, 255, 255);
+}
+
 /* tecnologies icons ================================= */
 
 div.stackInfo {
     width: 90%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    background-color: rgb(22, 22, 28);
-    border: 2px solid rgb(22, 22, 28);
-    border-radius: 10px;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 30px;
     margin: 3% auto;
     padding: 2%;
 }
@@ -63,8 +69,21 @@ div.stackInfo>div {
 
 /* contact =========================================== */
 
+.contact {
+    width: 40%;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 30px;
+    margin: 3% auto;
+    padding: 2%;
+}
+
 .contactInfo {
-    text-align: center;
+    width: 40%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 3% auto;
+    padding: 2%;
 }
 
 .socialLinks {
@@ -85,7 +104,7 @@ div.stackInfo>div {
     }
 
     div.photo>h2 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     div.professinalInfo>h3 {
@@ -105,12 +124,12 @@ div.stackInfo>div {
         font-size: 3vw;
     }
 
-    footer {
+    div.contactInfo {
         width: 90%;
         display: grid;
         grid-template-columns: auto auto auto auto;
-        background-color: rgb(22, 22, 28);
-        border: 2px solid rgb(22, 22, 28);
+        background-color: rgb(12, 12, 12);
+        border: 2px solid rgb(12, 12, 12);
         border-radius: 10px;
         margin: 3% auto;
         padding: 2%;
