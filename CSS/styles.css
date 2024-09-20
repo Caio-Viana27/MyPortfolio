@@ -4,9 +4,15 @@
 }
 
 body {
-    background-color: rgb(22, 22, 28);
-    color: rgb(126, 125, 147);
+    background-color: #16161c;
+    color: #7e7d93;
     font-family: "VT323", monospace;
+}
+
+/* Main page ======================================== */
+
+.main {
+    box-shadow: 0 0 10px 4px #d4c7c7;
 }
 
 .grid-container {
@@ -14,8 +20,8 @@ body {
     height: 90%;
     display: grid;
     grid-template-columns: 40% 60%;
-    background-color: rgb(12, 12, 12);
-    border: 2px solid rgb(12, 12, 12);
+    background-color: #0c0c0c;
+    border: 2px solid #0c0c0c;
     border-radius: 30px;
     margin: 3% auto;
     padding: 2%;
@@ -39,27 +45,44 @@ img {
 
 .text {
     font-size: 1.5vw;
+    margin: 3%;
 }
 
-a.generalLinks {
+.pageLinks {
+    margin: 3% 0;
+    padding: 2% 0;
     font-size: 2.5vw;
-    color: rgb(255, 255, 255);
+    color: #7e7d93;
 }
 
-/* tecnologies icons ================================= */
+.pageLinks:hover {
+    color: #ffffff;
+}
 
-div.stackInfo {
-    width: 90%;
+/* Projects page ================================= */
+
+div.projects {
+    width: 70%;
+    background-color: #0c0c0c;
+    border: 2px solid #0c0c0c;
+    border-radius: 30px;
+    margin: 3% auto;
+    padding: 5%;
+}
+
+#stackInfo {
+    width: 70%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    background-color: rgb(12, 12, 12);
-    border: 2px solid rgb(12, 12, 12);
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #0c0c0c;
+    border: 2px solid #0c0c0c;
     border-radius: 30px;
     margin: 3% auto;
     padding: 2%;
+    box-shadow: 0 0 10px 4px #d4c7c7;
 }
 
-div.stackInfo>div {
+#stackInfo>div {
     padding: inherit;
     margin: inherit;
     text-align: center;
@@ -67,19 +90,19 @@ div.stackInfo>div {
     font-weight: bold;
 }
 
-/* contact =========================================== */
+/* Contact page =========================================== */
 
 .contact {
-    width: 40%;
-    background-color: rgb(12, 12, 12);
-    border: 2px solid rgb(12, 12, 12);
+    width: 50%;
+    background-color: #0c0c0c;
+    border: 2px solid #0c0c0c;
     border-radius: 30px;
     margin: 3% auto;
-    padding: 2%;
+    padding: 5%;
 }
 
 .contactInfo {
-    width: 40%;
+    text-align: center;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 3% auto;
@@ -87,51 +110,77 @@ div.stackInfo>div {
 }
 
 .socialLinks {
-    color: rgb(126, 125, 147);
+    color: #7e7d93;
     text-decoration: none;
 }
 
 .socialLinks:hover {
-    color: white;
+    color: #ffffff;
+}
+
+/* AboutMe page =============================================== */
+
+#aboutMe {
+    width: 50%;
+    background-color: #0c0c0c;
+    border: 2px solid #0c0c0c;
+    border-radius: 30px;
+    margin: 3% auto;
+    padding: 5%;
 }
 
 /* mobile =============================================== */
 
 @media only screen and (max-width: 600px) {
-    div.personalInfo {
+
+    /* main page =============================================== */
+    div.main {
         display: block;
-        text-align: justify;
+        width: 80%;
     }
 
-    div.photo>h2 {
+    div.text {
+        text-align: center;
         font-size: 4vw;
     }
 
-    div.professinalInfo>h3 {
+    div.pageLinks {
         text-align: center;
     }
 
-    p.experience {
-        margin: 5%;
+    a.pageLinks {
+        font-size: 8vw;
     }
 
-    div.stackInfo {
+    /* Project page =============================================== */
+    div#stackInfo {
+        width: 80%;
+        margin-top: 7%;
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 5%;
+        text-align: center;
     }
 
-    div.stackInfo>div {
-        font-size: 3vw;
+    div#stackInfo>div>i {
+        font-size: 4vw;
     }
 
+    /* Contact page =============================================== */
     div.contactInfo {
-        width: 90%;
+        width: 80%;
         display: grid;
         grid-template-columns: auto auto auto auto;
-        background-color: rgb(12, 12, 12);
-        border: 2px solid rgb(12, 12, 12);
-        border-radius: 10px;
-        margin: 3% auto;
-        padding: 2%;
+        background-color: #0c0c0c;
+        border: 2px solid #0c0c0c;
+        border-radius: 30px;
+        margin-top: 7%;
+        padding: 5%;
+    }
+
+    /* AboutMe page =============================================== */
+
+    div#aboutMe {
+        width: 80%;
     }
 }
